@@ -1,0 +1,18 @@
+== BASE: intent repro (external timeout, /usr/bin/timeout)
+x-payload [rc=0]
+== BASE: fm_run_timed default mechanism=timeout
+steer text [rc=0]
+== BASE: fm_run_timed bash mechanism
+steer text [rc=0]
+== BASE: perl mechanism
+bash: line 1: fm_run_perl_timeout: command not found
+ [rc=127]
+== BASE: file stdin, external
+12634
+[rc=0] expected 12634
+== BASE: closed stdin, external + bash
+[ext rc=0]
+[bash rc=0]
+== BASE: bound still fires with piped stdin
+[ext rc=124 in 2s]
+[bash rc=124 in 2s]

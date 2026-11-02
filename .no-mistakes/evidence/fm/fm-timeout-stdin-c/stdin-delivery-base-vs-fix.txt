@@ -1,0 +1,24 @@
+=== lib: /tmp/tmp.UrYROdcNFV/base-lib.sh
+-- S1 intent repro: printf x | fm_run_external_timeout /usr/bin/timeout 10 cat
+rc=0 out=[x]
+-- S2 bash mechanism: FM_TIMEOUT_MECHANISM_OVERRIDE=bash printf multi-line | fm_run_timed 10 cat
+rc=0 out=[bash
+line1
+line2 with spaces]
+-- S3 default mechanism on host: printf hello | fm_run_timed 10 cat
+rc=0 out=[timeout
+hello]
+-- S4 file redirect: fm_run_timed 10 wc -c < 1MB file (timeout mech)
+rc=0 out=[1048576]
+=== lib: bin/fm-timeout-lib.sh
+-- S1 intent repro: printf x | fm_run_external_timeout /usr/bin/timeout 10 cat
+rc=0 out=[x]
+-- S2 bash mechanism: FM_TIMEOUT_MECHANISM_OVERRIDE=bash printf multi-line | fm_run_timed 10 cat
+rc=0 out=[bash
+line1
+line2 with spaces]
+-- S3 default mechanism on host: printf hello | fm_run_timed 10 cat
+rc=0 out=[timeout
+hello]
+-- S4 file redirect: fm_run_timed 10 wc -c < 1MB file (timeout mech)
+rc=0 out=[1048576]

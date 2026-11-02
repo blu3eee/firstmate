@@ -1,0 +1,37 @@
+shell: GNU bash, version 3.2.57(3)-release (x86_64-unknown-linux-gnu)
+=== lib: /tmp/tmp.UrYROdcNFV/base-lib.sh
+-- S1 intent repro: printf x | fm_run_external_timeout /usr/bin/timeout 10 cat
+rc=0 out=[x]
+-- S2 bash mechanism: FM_TIMEOUT_MECHANISM_OVERRIDE=bash printf multi-line | fm_run_timed 10 cat
+rc=0 out=[bash
+line1
+line2 with spaces]
+-- S3 default (timeout) mechanism: printf hello | fm_run_timed 10 cat
+rc=0 out=[timeout
+hello]
+-- S4 file redirect 1MiB: fm_run_timed 10 wc -c < file
+rc=0 out=[1048576]
+-- S5 bound still fires with piped stdin: yes | fm_run_timed 2 sleep 30 (timeout) / bash mech
+timeout-mech rc=124 elapsed=2s
+bash-mech rc=124 elapsed=2s
+-- S6 closed stdin and status passthrough
+timeout-mech closed-stdin rc=7 out=[ok]
+bash-mech closed-stdin rc=7 out=[ok]
+=== lib: {run-worktree}/bin/fm-timeout-lib.sh
+-- S1 intent repro: printf x | fm_run_external_timeout /usr/bin/timeout 10 cat
+rc=0 out=[x]
+-- S2 bash mechanism: FM_TIMEOUT_MECHANISM_OVERRIDE=bash printf multi-line | fm_run_timed 10 cat
+rc=0 out=[bash
+line1
+line2 with spaces]
+-- S3 default (timeout) mechanism: printf hello | fm_run_timed 10 cat
+rc=0 out=[timeout
+hello]
+-- S4 file redirect 1MiB: fm_run_timed 10 wc -c < file
+rc=0 out=[1048576]
+-- S5 bound still fires with piped stdin: yes | fm_run_timed 2 sleep 30 (timeout) / bash mech
+timeout-mech rc=124 elapsed=2s
+bash-mech rc=124 elapsed=2s
+-- S6 closed stdin and status passthrough
+timeout-mech closed-stdin rc=7 out=[ok]
+bash-mech closed-stdin rc=7 out=[ok]

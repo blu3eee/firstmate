@@ -1,0 +1,48 @@
+### GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)
+mech=timeout rc=0 out=CHILD_STDIN=notty
+mech=bash rc=0 out=CHILD_STDIN=notty
+ok - fm_run_timed preserves exact inherited pipe stdin through timeout
+ok - fm_run_timed preserves exact pipeline pipe stdin through timeout
+ok - fm_run_timed preserves exact inherited pipe stdin through gtimeout
+ok - fm_run_timed preserves exact pipeline pipe stdin through gtimeout
+ok - fm_run_timed preserves exact inherited pipe stdin through perl
+ok - fm_run_timed preserves exact pipeline pipe stdin through perl
+ok - fm_run_timed preserves exact inherited pipe stdin through bash
+ok - fm_run_timed preserves exact pipeline pipe stdin through bash
+ok - fm_run_timed delivers piped stdin through every available mechanism
+EXIT=0
+-- non-tty run:
+ok - fm_run_timed preserves exact inherited pipe stdin through timeout
+ok - fm_run_timed preserves exact pipeline pipe stdin through timeout
+ok - fm_run_timed preserves exact inherited pipe stdin through gtimeout
+ok - fm_run_timed preserves exact pipeline pipe stdin through gtimeout
+ok - fm_run_timed preserves exact inherited pipe stdin through perl
+ok - fm_run_timed preserves exact pipeline pipe stdin through perl
+ok - fm_run_timed preserves exact inherited pipe stdin through bash
+ok - fm_run_timed preserves exact pipeline pipe stdin through bash
+ok - fm_run_timed delivers piped stdin through every available mechanism
+non-tty exit=0
+### GNU bash, version 3.2.57(3)-release (x86_64-unknown-linux-gnu)
+mech=timeout rc=0 out=CHILD_STDIN=notty
+mech=bash rc=0 out=CHILD_STDIN=notty
+ok - fm_run_timed preserves exact inherited pipe stdin through timeout
+ok - fm_run_timed preserves exact pipeline pipe stdin through timeout
+ok - fm_run_timed preserves exact inherited pipe stdin through gtimeout
+ok - fm_run_timed preserves exact pipeline pipe stdin through gtimeout
+ok - fm_run_timed preserves exact inherited pipe stdin through perl
+ok - fm_run_timed preserves exact pipeline pipe stdin through perl
+ok - fm_run_timed preserves exact inherited pipe stdin through bash
+ok - fm_run_timed preserves exact pipeline pipe stdin through bash
+ok - fm_run_timed delivers piped stdin through every available mechanism
+EXIT=0
+-- non-tty run:
+ok - fm_run_timed preserves exact inherited pipe stdin through timeout
+ok - fm_run_timed preserves exact pipeline pipe stdin through timeout
+ok - fm_run_timed preserves exact inherited pipe stdin through gtimeout
+ok - fm_run_timed preserves exact pipeline pipe stdin through gtimeout
+ok - fm_run_timed preserves exact inherited pipe stdin through perl
+ok - fm_run_timed preserves exact pipeline pipe stdin through perl
+ok - fm_run_timed preserves exact inherited pipe stdin through bash
+ok - fm_run_timed preserves exact pipeline pipe stdin through bash
+ok - fm_run_timed delivers piped stdin through every available mechanism
+non-tty exit=0

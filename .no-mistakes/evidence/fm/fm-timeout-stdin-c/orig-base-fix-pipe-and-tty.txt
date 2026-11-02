@@ -1,0 +1,32 @@
+### shell: GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)
+== lib: /tmp/tmp.UrYROdcNFV/orig-lib.sh
+piped mech=timeout out=[x]
+mech=timeout rc=0 out=CHILD_STDIN=notty
+piped mech=bash out=[x]
+mech=bash rc=0 out=CHILD_STDIN=tty
+== lib: /tmp/tmp.UrYROdcNFV/base-lib.sh
+piped mech=timeout out=[x]
+mech=timeout rc=0 out=CHILD_STDIN=tty
+piped mech=bash out=[x]
+mech=bash rc=0 out=CHILD_STDIN=tty
+== lib: {run-worktree}/bin/fm-timeout-lib.sh
+piped mech=timeout out=[x]
+mech=timeout rc=0 out=CHILD_STDIN=notty
+piped mech=bash out=[x]
+mech=bash rc=0 out=CHILD_STDIN=tty
+### shell: GNU bash, version 3.2.57(3)-release (x86_64-unknown-linux-gnu)
+== lib: /tmp/tmp.UrYROdcNFV/orig-lib.sh
+piped mech=timeout out=[]
+mech=timeout rc=0 out=CHILD_STDIN=notty
+piped mech=bash out=[]
+mech=bash rc=0 out=CHILD_STDIN=tty
+== lib: /tmp/tmp.UrYROdcNFV/base-lib.sh
+piped mech=timeout out=[x]
+mech=timeout rc=0 out=CHILD_STDIN=tty
+piped mech=bash out=[x]
+mech=bash rc=0 out=CHILD_STDIN=tty
+== lib: {run-worktree}/bin/fm-timeout-lib.sh
+piped mech=timeout out=[x]
+mech=timeout rc=0 out=CHILD_STDIN=notty
+piped mech=bash out=[x]
+mech=bash rc=0 out=CHILD_STDIN=tty

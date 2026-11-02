@@ -1,0 +1,14 @@
+### shell=3.2.57(3)-release lib=pre-fix (740855a2^ fm-timeout-lib.sh)
+fm-send rc=1
+error: remote steer message must be nonempty
+error: steer not sent to remote secondmate sm2 (the remote steering-inbox record could not be written; the remote leg's stderr above has the reason)
+remote received: argv=fm-remote-secondmate-control.sh send-stdin sm2 payload=[]
+### shell=5.2.21(1)-release lib=pre-fix (740855a2^ fm-timeout-lib.sh)
+fm-send rc=0
+remote received: argv=fm-remote-secondmate-control.sh send-stdin sm2 payload=[[fm-from-firstmate]⁣corr=dd6d417af34e1800 hello remote mate]
+### shell=3.2.57(3)-release lib=fixed (this branch + tty repair)
+fm-send rc=0
+remote received: argv=fm-remote-secondmate-control.sh send-stdin sm2 payload=[[fm-from-firstmate]⁣corr=e82f98163ca46fdd hello remote mate]
+### shell=5.2.21(1)-release lib=fixed (this branch + tty repair)
+fm-send rc=0
+remote received: argv=fm-remote-secondmate-control.sh send-stdin sm2 payload=[[fm-from-firstmate]⁣corr=619bcff96358fb59 hello remote mate]

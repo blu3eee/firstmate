@@ -1,0 +1,9 @@
+### BASE b5e5ad45 in 80x24 pty
+stdin of caller is tty: yes
+external(/usr/bin/timeout) child sees: tty
+bash mechanism child sees: tty
+bash mechanism, piped payload: hello-remote
+external, piped payload: hello-remote
+[exit=0]
+mechanism with no timeout on PATH: perl
+perl piped payload: hello-remote [rc=0]

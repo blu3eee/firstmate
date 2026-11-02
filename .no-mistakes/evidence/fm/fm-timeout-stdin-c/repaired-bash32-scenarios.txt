@@ -1,0 +1,9 @@
+shell: GNU bash, version 3.2.57(3)-release (x86_64-unknown-linux-gnu) lib: repaired worktree
+S1 repro rc=0 out=[x]
+S2 bash-mech rc=0 out=[line1
+line2]
+S4 file rc=0 out=[1048576]
+S5 timeout-mech rc=124 elapsed=2s
+S5 bash-mech rc=124 elapsed=2s
+S6 timeout-mech closed rc=7 out=[ok]
+S6 bash-mech closed rc=7 out=[ok]

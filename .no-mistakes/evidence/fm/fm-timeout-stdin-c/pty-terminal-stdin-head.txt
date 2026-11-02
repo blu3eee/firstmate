@@ -1,0 +1,9 @@
+### HEAD 71a6ce24 in 80x24 pty
+stdin of caller is tty: yes
+external(/usr/bin/timeout) child sees: notty
+bash mechanism child sees: notty
+bash mechanism, piped payload: hello-remote
+external, piped payload: hello-remote
+[exit=0]
+mechanism with no timeout on PATH: perl
+perl piped payload: hello-remote [rc=0]

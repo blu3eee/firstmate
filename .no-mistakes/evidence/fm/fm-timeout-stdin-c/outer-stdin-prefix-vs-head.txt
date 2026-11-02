@@ -1,0 +1,12 @@
+== prefix: payload piped into script stdin, external /usr/bin/timeout
+ [rc=0]
+== prefix: payload from file, external
+ [rc=0]
+== prefix: payload piped, bash mechanism
+pipe-payload [rc=0]
+== head: payload piped into script stdin, external /usr/bin/timeout
+pipe-payload [rc=0]
+== head: payload from file, external
+file-payload [rc=0]
+== head: payload piped, bash mechanism
+pipe-payload [rc=0]

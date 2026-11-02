@@ -1,0 +1,3 @@
+not ok - a large remote steer must be delivered through the remote stdin channel: ●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━�
+error: steer to remote secondmate rsm is unconfirmed (the remote transport did not complete within its 30s budget; remote completion unknown). Only the correlation-reusing resend below is idempotent a
+[exit=1]
