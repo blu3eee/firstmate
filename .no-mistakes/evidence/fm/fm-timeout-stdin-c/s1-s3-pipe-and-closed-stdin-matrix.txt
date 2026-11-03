@@ -1,0 +1,39 @@
+-- PRE-#8079 (original bug)
+  bash 5.2.21(1)-release ext-timeout pipe:   [x]
+  bash 5.2.21(1)-release bash-mech pipe:     [x]
+  bash 5.2.21(1)-release ext closed stdin:   [ok
+rc=0]
+  bash 5.2.21(1)-release bash-mech closed:   [ok
+rc=0]
+  bash 3.2.57(3)-release ext-timeout pipe:   []
+  bash 3.2.57(3)-release bash-mech pipe:     []
+  bash 3.2.57(3)-release ext closed stdin:   [ok
+rc=0]
+  bash 3.2.57(3)-release bash-mech closed:   [ok
+rc=0]
+-- BASE 78c69df2
+  bash 5.2.21(1)-release ext-timeout pipe:   [x]
+  bash 5.2.21(1)-release bash-mech pipe:     [x]
+  bash 5.2.21(1)-release ext closed stdin:   [ok
+rc=0]
+  bash 5.2.21(1)-release bash-mech closed:   [ok
+rc=0]
+  bash 3.2.57(3)-release ext-timeout pipe:   [x]
+  bash 3.2.57(3)-release bash-mech pipe:     [x]
+  bash 3.2.57(3)-release ext closed stdin:   [ok
+rc=0]
+  bash 3.2.57(3)-release bash-mech closed:   [ok
+rc=0]
+-- HEAD b19ff929
+  bash 5.2.21(1)-release ext-timeout pipe:   [x]
+  bash 5.2.21(1)-release bash-mech pipe:     [x]
+  bash 5.2.21(1)-release ext closed stdin:   [ok
+rc=0]
+  bash 5.2.21(1)-release bash-mech closed:   [ok
+rc=0]
+  bash 3.2.57(3)-release ext-timeout pipe:   [x]
+  bash 3.2.57(3)-release bash-mech pipe:     [x]
+  bash 3.2.57(3)-release ext closed stdin:   [ok
+rc=0]
+  bash 3.2.57(3)-release bash-mech closed:   [ok
+rc=0]

@@ -1,0 +1,11 @@
+shell: GNU bash, version 3.2.57(3)-release (x86_64-unknown-linux-gnu)  (macOS /bin/bash is 3.2.57)
+## S1 intent repro: printf x | fm_run_external_timeout /usr/bin/timeout 10 cat
+BASE: [x]
+HEAD: [x]
+## S1b default fm_run_timed (mechanism=timeout)
+BASE: [hello]
+HEAD: [hello]
+## S2 FM_TIMEOUT_MECHANISM_OVERRIDE=bash
+BASE: [hello]
+HEAD: [hello]
+## S2b file stdin, bash mech, HEAD: [filedata]

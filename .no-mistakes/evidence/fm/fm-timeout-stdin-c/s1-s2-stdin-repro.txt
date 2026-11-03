@@ -1,0 +1,10 @@
+## S1 repro: printf x | fm_run_external_timeout /usr/bin/timeout 10 cat
+BASE:  [x]
+HEAD:  [x]
+## S1b default mechanism on this host: timeout
+BASE fm_run_timed: [hello]
+HEAD fm_run_timed: [hello]
+## S2 bash override: FM_TIMEOUT_MECHANISM_OVERRIDE=bash printf hello | fm_run_timed 10 cat
+BASE: [hello]
+HEAD: [hello]
+## S2b file stdin via bash override, HEAD: [filedata]
